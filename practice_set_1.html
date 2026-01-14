@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: red;
+        }
+        /*Here i am use the internal style but the css gives priority to the inline so it shows the inline style color in the browser*/
+        #heading{
+            color: chartreuse;
+        }
+        p{
+            color: blue;
+        }
+        .heading_2{
+            color: coral;
+        }
+        
+        #second_heading{
+            color: blue;
+        }
+        /*Group selector*/
+        #first1,#second2{
+            color: rgb(60, 0, 139);
+        }
+    </style>
+</head>
+<body>
+    <h1>This is the heading</h1>
+
+    <div id="heading" style="color: black;">Lorem ipsum dolor sit amet.</div>
+
+    <link rel="stylesheet" href="practice_set_3.css">
+
+    <div id="second_heading">
+        <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, tempore.</p>
+        <h2 class="heading_2">Lorem, ipsum dolor.</h2>
+    </div>
+    <div id="first1">Lorem ipsum dolor sit amet.</div>
+    <div id="second2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, officiis!</div>
+</body>
+</html>
